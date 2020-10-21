@@ -1,14 +1,12 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import CustomizedTables from './components/CustomizedTables'
+// import CustomizedTables from './components/CustomizedTables';
+import ResponsiveDrawer from './components/ResponsiveDrawer';
 
 function App() {
   return (
     <div className="App">
-      <CustomizedTables />
-      <Button variant="contained" color="primary">
-        Primary
-      </Button>
+      {/* <CustomizedTables /> */}
+      <ResponsiveDrawer />
     </div>
   );
 }
