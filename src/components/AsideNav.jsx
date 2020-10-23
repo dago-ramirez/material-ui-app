@@ -6,13 +6,13 @@ import DrawerList from './DrawerList';
 
 export default function AsideNav(props) {
     const theme = useTheme();
-    const container = props.window !== undefined ? () => window().document.body : undefined;
+    // const container = props.window !== undefined ? () => window().document.body : undefined;
     
     return (
         <nav className={props.classes.drawer} aria-label="mailbox folders">
             <Hidden smUp implementation="css">
                 <Drawer
-                    container={container}
+                    // container={container}
                     variant="temporary"
                     anchor={theme.direction === 'rtl' ? 'right' : 'left'}
                     open={props.mobileOpen}

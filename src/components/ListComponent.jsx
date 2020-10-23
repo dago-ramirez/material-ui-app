@@ -1,6 +1,6 @@
 import React from 'react';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import CollectionsIcon from '@material-ui/icons/Collections';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -12,7 +12,7 @@ export default function ListComponent({ array }) {
             <List>
                 {array.map((text, index) => (
                     <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                        <ListItemIcon>{index > 1 ? <DashboardIcon /> : <CollectionsIcon />}</ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
                 ))}
