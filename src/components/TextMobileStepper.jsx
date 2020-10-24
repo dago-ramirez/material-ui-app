@@ -72,10 +72,13 @@ export default function TextMobileStepper() {
   };
 
   return (
-    <Box display="flex" justifyContent="center" m={2} p={1}>
+    <Box display="flex" flexDirection='column' alignItems="center" m={2} p={1}>
+      <Typography component="h1" variant="h3" paragraph >
+        Stepper 1
+      </Typography>
       <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
-          <Typography>{tutorialSteps[activeStep].label}</Typography>
+          <Typography variant='h6' >{tutorialSteps[activeStep].label}</Typography>
         </Paper>
         <img
           className={classes.img}

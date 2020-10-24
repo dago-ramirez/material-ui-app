@@ -7,7 +7,7 @@ export default function DrawerList({ className }) {
         <div>
             <div className={className} />
             <Divider />
-            <ListComponent array={['Stepper 1', 'Stepper 2', 'Table', 'Form']} />
+            <ListComponent array={['Stepper 1', 'Stepper 2', 'Tabla', 'Formulario']} />
             <Divider />
             <ListComponent array={['All mail', 'Trash', 'Spam']} />
         </div>

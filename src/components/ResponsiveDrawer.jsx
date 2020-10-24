@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import CustomizedTables from './CustomizedTables'
 import AppNavBar from './AppNavBar';
 import AsideNav from './AsideNav';
+import FormComponent from './FormComponent';
 import TextMobileStepper from './TextMobileStepper';
 import SwipeableTextMobileStepper from './SwipeableTextMobileStepper';
 
@@ -63,6 +64,7 @@ function ResponsiveDrawer() {
         <TextMobileStepper />
         <SwipeableTextMobileStepper />
         <CustomizedTables />        
+        <FormComponent />
       </main>
     </div>
   );

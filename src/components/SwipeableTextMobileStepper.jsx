@@ -80,7 +80,10 @@ export default function SwipeableTextMobileStepper() {
     };
 
     return (
-        <Box display="flex" justifyContent="center" m={2} p={1}>
+        <Box display="flex" flexDirection='column' alignItems="center" m={2} p={1}>
+            <Typography component="h1" variant="h3" paragraph >
+                Stepper 2
+            </Typography>
             <div className={classes.root}>
                 <Paper square elevation={0} className={classes.header}>
                     <Typography>{tutorialSteps[activeStep].label}</Typography>
